@@ -64,4 +64,5 @@ print(parsed_html.findChildren()[-9].nextSibling.replace(r"```bash", " " + color
       .replace(r"```", color.END+ " ")
       .replace(r" `", " " +color.GREEN)
       .replace(r"` ", color.END+ " ")
+      .replace(r"`,", color.END+ " ")
       .replace(r"`.", color.END + ". "))
